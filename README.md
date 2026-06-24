@@ -23,9 +23,9 @@ Cada pasta contém exercícios, implementações e anotações específicas da l
 
 ```text
 C/
-CPP/
+C++/
 Java/
-CSharp/
+C#/
 Python/
 ```
 
