@@ -1,0 +1,44 @@
+# Binários
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+*.a
+*.lib
+
+# Debug
+*.pdb
+*.ilk
+
+# Build
+build/
+bin/
+Debug/
+Release/
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+Java/.metadata/
+
+# Code::Blocks
+*.layout
+*.depend
+obj/
