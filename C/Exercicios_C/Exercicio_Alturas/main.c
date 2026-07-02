@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-
 int main()
 {
-    int x, i, idade, soma;
-    double altura, somaAltura, media, porcentagem, porcentagemReal;
+    int x, i, idade;
+    int soma = 0;
+    double altura, media, porcentagem, porcentagemReal;
+    double somaAltura = 0;
 
     char nome[50];
 
@@ -15,12 +16,12 @@ int main()
 
 
     for (i = 0; i < x; i++) {
-        printf("Dados da %d pessoa: ", i+1);
-        printf("Nome: ");
-        fgets(nome, 50, stdin);
-        printf("\nIdade: ");
+        printf("\nDados da %d pessoa: ", i+1);
+        printf("\nNome: ");
+        scanf(" %[^\n]", nome);
+        printf("Idade: ");
         scanf(" %d", &idade);
-        printf("\nAltura: ");
+        printf("Altura: ");
         scanf(" %lf", &altura);
 
         if (idade < 16) {
@@ -32,10 +33,10 @@ int main()
     }
 
     media = somaAltura / i;
-    porcentagem = (soma / i) * 100;
+    porcentagem = (soma * 100.0) / x;
 
-    printf("\nAltura media = %lf", altura);
-    printf("\nPessoas com menos de 16 anos: %lf", porcentagem);
+    printf("\nAltura media = %.2lf", media);
+    printf("\nPessoas com menos de 16 anos: %.2lf %%", porcentagem);
     for (i = 0; i < x; i++) {
         printf(" \n%s", pessoasMenos[i]);
     }
