@@ -7,14 +7,14 @@ int main()
 
     printf("Digite o numero de linhas: ");
     scanf(" %d", &m);
-    printf("Digite o numero de colunas");
+    printf("Digite o numero de colunas: ");
     scanf(" %d", &n);
     int vet[m][n];
     int vetSoma[m];
 
     int soma = 0;
     for (i = 0; i < m; i++) {
-        printf("Digite os elementos da %d a. linha: ");
+        printf("Digite os elementos da %d a. linha:\n ");
         for (j = 0; j < n; j++) {
            scanf("%d",  &vet[i][j]);
            soma = soma + vet[i][j];
