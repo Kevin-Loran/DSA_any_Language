@@ -1,4 +1,4 @@
-# DSA Any Language
+# logic_Any_Language
 
 Repositório dedicado ao estudo de Estruturas de Dados e Algoritmos utilizando diferentes linguagens de programação.
 
